@@ -1,0 +1,15 @@
+{
+  "button": {
+    "scope": "rajat_sharma.sample_bit",
+    "version": "0.0.1",
+    "mainFile": "index.jsx",
+    "rootDir": "src/components/Button"
+  },
+  "new-navbar": {
+    "scope": "rajat_sharma.sample_bit",
+    "version": "0.0.1",
+    "mainFile": "index.jsx",
+    "rootDir": "src/components/NewNavbar"
+  },
+  "$schema-version": "15.0.0"
+}
