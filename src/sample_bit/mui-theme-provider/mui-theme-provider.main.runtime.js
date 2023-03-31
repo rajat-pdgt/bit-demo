@@ -16,9 +16,36 @@ export class ReactWithMuiMain {
        * override dependencies here
        */
       react.overrideDependencies({
-        dependencies: {},
-        devDependencies: {},
-        peerDependencies: {},
+        dependencies: {
+          "@mui/material": "-",
+          react: "-",
+          "react-dom": "-",
+          "@testing-library/react": "-",
+        },
+        devDependencies: {
+          "@mui/material": "-",
+          react: "-",
+          "react-dom": "-",
+          "@testing-library/react": "-",
+        },
+        peerDependencies: {
+          "@mui/material": {
+            version: "5.2.1",
+            resolveFromEnv: true,
+          },
+          "@testing-library/react": {
+            version: "^5.0.6",
+            resolveFromEnv: true,
+          },
+          react: {
+            version: "^17.0.2",
+            resolveFromEnv: true,
+          },
+          "react-dom": {
+            version: "^17.0.2",
+            resolveFromEnv: true,
+          },
+        },
       }),
     ]);
     envs.registerEnv(templatesReactEnv);
