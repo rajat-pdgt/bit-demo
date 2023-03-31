@@ -6,14 +6,12 @@ export const MuiButtonVariants = () => {
 
   return (
     <div className="vertical">
-      {variants.map((v, index) => (
-        <>
-          <Button key={index} variant={v}>
-            MUI Button {v} variant
-          </Button>
+      {variants.map((v) => (
+        <div key={v}>
+          <Button variant={v}>MUI Button {v} variant</Button>
           <br />
           <br />
-        </>
+        </div>
       ))}
     </div>
   );
