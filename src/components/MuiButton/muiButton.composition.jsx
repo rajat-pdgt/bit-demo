@@ -8,7 +8,7 @@ export const MuiButtonVariants = () => {
     <div className="vertical">
       {variants.map((v) => (
         <div key={v}>
-          <Button variant={v}>MUI Button {v} variant</Button>
+          <Button variant={v}>MUI Buttons {v} variant</Button>
           <br />
           <br />
         </div>

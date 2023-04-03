@@ -11,6 +11,7 @@ export class ReactWithMuiMain {
   static runtime = MainRuntime;
 
   static async provider([react, envs]) {
+    console.log({ reactebv: react.reactEnv });
     const templatesReactEnv = envs.compose(react.reactEnv, [
       /**
        * override dependencies here
@@ -21,28 +22,45 @@ export class ReactWithMuiMain {
           react: "-",
           "react-dom": "-",
           "@testing-library/react": "-",
+          "@babel/runtime": "-",
+          "core-js": "-",
+          "@teambit/harmony": "-",
+          "@rajat_sharma/sample_bit.mui-theme-provider": "-",
         },
         devDependencies: {
           "@mui/material": "-",
           react: "-",
           "react-dom": "-",
           "@testing-library/react": "-",
+          "@rajat_sharma/sample_bit.mui-theme-provider": "-",
         },
         peerDependencies: {
           "@mui/material": {
-            version: "5.2.1",
-            resolveFromEnv: true,
-          },
-          "@testing-library/react": {
-            version: "^5.0.6",
+            version: "^5.11.15",
             resolveFromEnv: true,
           },
           react: {
-            version: "^17.0.2",
+            version: "^16.8.0 || ^17.0.0",
             resolveFromEnv: true,
           },
           "react-dom": {
-            version: "^17.0.2",
+            version: "^16.8.0 || ^17.0.0",
+            resolveFromEnv: true,
+          },
+          "@babel/runtime": {
+            version: "7.20.0",
+            resolveFromEnv: true,
+          },
+          "core-js": {
+            version: "^3.0.0",
+            resolveFromEnv: true,
+          },
+          "@teambit/harmony": {
+            version: "0.4.6",
+            resolveFromEnv: true,
+          },
+          "@rajat_sharma/sample_bit.mui-theme-provider": {
+            version: "latest",
             resolveFromEnv: true,
           },
         },
@@ -54,3 +72,4 @@ export class ReactWithMuiMain {
 }
 
 MuiThemeProviderAspect.addRuntime(ReactWithMuiMain);
+export default ReactWithMuiMain;

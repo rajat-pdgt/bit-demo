@@ -17,7 +17,7 @@
     },
     "mui-button": {
         "scope": "rajat_sharma.sample_bit",
-        "version": "0.0.5",
+        "version": "0.0.13",
         "mainFile": "index.jsx",
         "rootDir": "src/components/MuiButton",
         "config": {
@@ -29,7 +29,7 @@
     },
     "mui-theme-provider": {
         "scope": "rajat_sharma.sample_bit",
-        "version": "0.0.3",
+        "version": "0.0.11",
         "mainFile": "index.js",
         "rootDir": "src/sample_bit/mui-theme-provider"
     },

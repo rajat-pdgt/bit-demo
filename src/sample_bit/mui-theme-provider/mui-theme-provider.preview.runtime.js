@@ -19,13 +19,13 @@ function ThemeProvider({ theme = defaultTheme, children }) {
   return <MuiThemeProvider theme={theme}>{children}</MuiThemeProvider>;
 }
 
-export class ReactWithMuiPreviewMain {
+export class ReactWithMuiPreviewMains {
   static runtime = PreviewRuntime;
 
   static dependencies = [ReactAspect];
 
   static async provider([react]) {
-    const reactWithMuiPreviewMain = new ReactWithMuiPreviewMain();
+    const reactWithMuiPreviewMain = new ReactWithMuiPreviewMains();
 
     react.registerProvider([ThemeProvider]); // <----- Register your theme provider here
 
@@ -33,4 +33,4 @@ export class ReactWithMuiPreviewMain {
   }
 }
 
-MuiThemeProviderAspect.addRuntime(ReactWithMuiPreviewMain);
+MuiThemeProviderAspect.addRuntime(ReactWithMuiPreviewMains);
