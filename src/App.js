@@ -1,6 +1,5 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Navbar from "./components/NewNavbar";
+import Navbar from "@rajat_sharma/sample_bit.new-navbar";
 
 function App() {
   return (
